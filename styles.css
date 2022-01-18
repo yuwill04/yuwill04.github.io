@@ -1,0 +1,50 @@
+.container {
+    height: 400px;
+    width: 150px;
+    background-color: #000;
+    border-radius: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(1s);
+        background-color: green;
+    }
+    50% {
+        transform: translate(2s);
+        background-color: none;
+    }
+    100% {
+        transform: translate(3s);
+        background-color: none;
+    }
+}
+
+.red {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(71, 68, 68);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.yellow {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(71, 68, 68);
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.green {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(71, 68, 68);
+    border-radius: 50%;
+    margin: 10px;
+    animation: move 3s ease 1s forwards;
+}
